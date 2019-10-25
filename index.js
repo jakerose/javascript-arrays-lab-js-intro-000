@@ -1,6 +1,6 @@
 var kittens = ["Milo", "Otis", "Garfield"] //define your array here
 var meow = kittens.slice(1)
-var woof = kittens.slice(3)
+var woof = kittens.slice(0, kittens.length - 1)
 
 // Add your functions and code here
 function destructivelyAppendKitten(name) {
@@ -33,7 +33,7 @@ function prependKitten(name) {
 
 function removeLastKitten() {
   var slice = kittens.slice(0, kittens.length - 1)
-  return kittens
+  return woof
 }
 
 function removeFirstKitten() {
